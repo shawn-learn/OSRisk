@@ -35,3 +35,13 @@ This Python-based risk analysis engine evaluates complex risk scenarios using a 
 - **Simulation**: Monte Carlo with NumPy; optional symbolic evaluation
 - **Output**: Distribution of outcomes, expected loss, percentiles
 
+
+## Probability Distributions
+
+The engine uses a flexible distribution system that lets you replace any numeric
+parameter with a probability distribution. Supported distributions include fixed
+values, uniform, triangular, normal, lognormal, exponential, Weibull, gamma,
+beta, Poisson, and discrete custom distributions. Additional types can be added
+easily.
+Each Monte Carlo step samples from these distributions using NumPy and SciPy.
+See `examples/monte_carlo_example.py` for a demonstration.
